@@ -4,7 +4,7 @@ The LRTM-S5PTN was developed to investigate the low-rank properties of large-sca
 
 The workflow is as follows:
 
-Point data should be downloaded from NASA GES DISC.
+Point data need to be downloaded from NASA GES DISC.
 
 Conversion to rasters: The point data is converted to rasters based on specified qa_value, date_interval, and resolutions (see converter_example.py under examples). The source codes for conversion are included here but this step is currently not functional in this Git due to the size of the daily point data, which exceeds Git's maximum file size. One first needs to download the data and set directories as commented in the code to run the code. 
 
