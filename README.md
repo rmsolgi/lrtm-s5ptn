@@ -15,5 +15,9 @@ Tensor completion and Kriging: Tensor completion and Kriging are run to fill in 
 The current code is configured for the CONUS region, bounded by the coordinates 20°N to 55°N and 130°W to 60°W. Additionally, the converter generates rasters at resolutions of 0.05, 0.1, 0.25, 0.5, and 1.0. If different regions or resolutions are desired, the source code must be modified. File naming is based on the original names when the data were downloaded from GES DISC.
 
 
+Use the package manager [pip](https://pip.pypa.io/en/stable/) to run examples.
 
+```python
+pip install lrtm-s5ptn
+```
 
