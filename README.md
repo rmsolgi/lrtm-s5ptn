@@ -1,6 +1,6 @@
 # LRTM-S5PTN
 
-The LRTM-S5PTN was developed to investigate the low-rank properties of large-scale spatiotemporal atmospheric variables using low-rank tensor modeling (LRTM) of Sentinel-5P TROPOMI Tropospheric NO₂ (S5PTN).
+The LRTM-S5PTN was developed to investigate the low-rank properties of large-scale spatiotemporal atmospheric variables using a low-rank tensor model (LRTM) of Sentinel-5P TROPOMI Tropospheric NO₂ (S5PTN).
 
 The workflow is as follows:
 
