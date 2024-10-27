@@ -44,7 +44,7 @@ granule_end_date_list=generate_date_list(start_date,end_date)
 
 for d in granule_end_date_list:
     converter_run(read_directory, write_directory,raster_directory, d, 0.5)
-    converter_run(read_directory, write_directory,raster_directory, d, 0.75)
+    
     
 
      
