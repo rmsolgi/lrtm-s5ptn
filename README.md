@@ -5,13 +5,11 @@ The LRTM-S5PTN was developed to investigate the low-rank properties of large-sca
 The workflow is as follows:
 
 Point data should be downloaded from NASA GES DISC.
-Conversion to rasters: The point data is converted to rasters based on specified qa_value, date_interval, and resolutions (see converter_example.py under examples). This step is currently not functional in this Git due to the size of the daily point data, which exceeds Git's maximum file size. One first need to download the data and set directories as commented in the code to run the code. 
+
+Conversion to rasters: The point data is converted to rasters based on specified qa_value, date_interval, and resolutions (see converter_example.py under examples). The source codes for conversion are included here but this step is currently not functional in this Git due to the size of the daily point data, which exceeds Git's maximum file size. One first needs to download the data and set directories as commented in the code to run the code. 
 
 
-Preparation of missing indices: Missing indices are prepared as a numpy array (see example_missing_indices under examples).
-
-
-Tensor completion and Kriging: Tensor completion and Kriging are run to fill in the missing values (see lrtm_example.py and kriging_example.py under examples). The output is a dictionary file containing metrics and logs. This part is functional using the example rasters. If additional dates and resolutions are needed, the corresponding rasters should be prepared as described in steps 1 and 2.
+Tensor completion and Kriging: Tensor completion and Kriging are run to fill in the missing values (see lrtm_example.py and kriging_example.py under examples). The output is a dictionary file containing metrics and logs. The example codes on this Git are functional using the example rasters. If additional dates and resolutions are needed, the corresponding rasters should be prepared as described in steps 1 and 2. Missing indices are prepared as a numpy array (see example_missing_indices under examples).
 
 
 The current code is configured for the CONUS region, bounded by the coordinates 20°N to 55°N and 130°W to 60°W. Additionally, the converter generates rasters at resolutions of 0.05, 0.1, 0.25, 0.5, and 1.0. If different regions or resolutions are desired, the source code must be modified. File naming is based on the original names when the data were downloaded from GES DISC.
