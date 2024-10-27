@@ -6,7 +6,7 @@ The workflow is as follows:
 
 Point data need to be downloaded from NASA GES DISC.
 
-Conversion to rasters: The point data from GES DISC is converted to rasters based on specified qa_value, date_interval, and resolutions (see converter_example.py under examples). The source codes for conversion are included here but this step is currently not functional in this Git due to the size of the daily point data, which exceeds Git's maximum file size. One first needs to download the data and set directories as commented in the code to run the code. 
+Conversion to rasters: The point data from GES DISC is converted to rasters based on specified qa_value, date_interval, and resolutions (see converter_example.py under examples). The source codes for conversion are included here but this step is currently not functional in this Git due to the size of the input daily point data, which exceeds Git's maximum file size. One first needs to download the data and set directories as commented in the code to run the code. 
 
 
 Tensor completion and Kriging: Tensor completion and Kriging are run to fill in the missing values (see lrtm_example.py and kriging_example.py under examples). The output is a dictionary file containing metrics and logs. The example codes on this Git are functional using the example rasters. If additional dates and resolutions are needed, the corresponding rasters should be prepared as described above. Missing indices are prepared as a numpy array (see example_missing_indices under examples).
